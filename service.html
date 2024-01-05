@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+      color: white;
+      font-family: 'Pixelify Sans', sans-serif;
+    }
+    fieldset {
+      color: white;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin: 20px 0;
+      padding: 20px;
+    }
+    .feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback-form h2 {
+  font-size: 24px; /* Larger heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.feedback-form label {
+  margin-bottom: 15px;
+  font-size: 18px; /* Larger label text */
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px; /* Larger input and textarea text */
+}
+
+.feedback-form input[type="submit"] {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0D50FF;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px; /* Larger button text */
+}
+
+.feedback-form input[type="submit"]:hover {
+  background-color: #0640C4;
+}
+
+    </style>
+<head>
+  <meta charset="UTF-8">
+  <title>Outfits</title>
+  <link rel="stylesheet" href="C:\Users\mahes\Desktop\MINI PROJECT\css\style.css">
+  <link rel="stylesheet" href="C:\Users\mahes\Desktop\MINI PROJECT\css\style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <h1 class="header-text" >
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="outfits.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="service.html">Services</a></li>
+          </ul>
+        </nav>
+      </h1>
+    </div>
+  </header>
+  <section class="video-section">
+    <video src="C:\Users\mahes\Desktop\portfolio\media\RPReplay_Final1704479927 (1).mp4" autoplay loop muted></video>
+    <div class="video-overlay">
+      <h1>Services I Offer</h1>
+    </div>
+  </section>
+ <main>
+    <section class="services">
+      <div class="service">
+          <div class="servicedetails">
+            <br>
+            <fieldset>
+              <h2>Content Writing</h2>
+            <p>Exceptional content writing services providing engaging, SEO-optimized, and original content tailored to diverse audiences and platforms. Proficient in crafting compelling narratives, blog posts, articles, and social media content, ensuring brand consistency and audience engagement. Skilled in conducting thorough research to deliver informative and authoritative content across various niches. Experienced in utilizing SEO best practices to enhance visibility and drive organic traffic. Adept at meeting tight deadlines while maintaining high-quality standards. Proven ability to adapt writing style to client requirements, delivering impactful content that resonates with readers and achieves desired objectives.</p>
+            <p>Work Type: Remote</p>
+            </fieldset>
+            <br><br>
+            <fieldset>
+              <h2>Web Development</h2>
+              Proficient web development services delivering robust, responsive, and user-centric websites. Skilled in front-end and back-end development, employing HTML, CSS, JavaScript, and various frameworks to create seamless user experiences. Experience in building scalable and efficient web applications, ensuring cross-browser compatibility and mobile responsiveness. Knowledgeable in database management, API integration, and security protocols, enhancing site functionality and performance. Dedicated to staying updated with the latest industry trends and technologies, ensuring the implementation of cutting-edge solutions. Committed to collaborating with teams to deliver innovative digital solutions that meet client objectives and elevate user engagement.
+            <p>Work Type: Remote</p>
+            </fieldset>
+          </div>
+      </div>
+      <!-- Feedback form -->
+      <div class="feedback-form">
+        <fieldset>
+          <h1 style="text-align: center;">Feedback Form</h1>
+        <form action="#" method="POST" style="text-align: center;">
+          <label for="name" >Name:</label>
+          <input type="text" id="name" name="name" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required>
+          <br>
+          <p for="message">Message:</p>
+          <textarea id="message" name="message" rows="4" required></textarea><br>
+          <a href="response.html" id="homebutton">Contact Me!</a>
+        </form>
+        </fieldset>
+      </div>
+      </section>
+<br><hr>
+      
+  </main>
+</body>
+
+<footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2>Contact Me</h2>
+        <p>Email: mishadevegowda@gmail.com</p>
+        <p>Phone: 9591992141</p>
+      </div>
+      <div class="footer-section">
+        <h2>Site Links</h2>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About me</a></p>
+        <p><a href="outfits.html">Projects</a></p>
+        <P><a href="service.html">Services</a></P>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; MISHA N DEVEGOWDA</p>
+    </div>
+  </footer>
+</html>

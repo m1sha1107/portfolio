@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LEVELS</title>
+  <link rel="stylesheet" href="C:\Users\mahes\Desktop\MINI PROJECT\css\style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+  <style>
+    /* Animation for the text and buttons */
+    .animate {
+      animation: slideUp 1s ease forwards;
+      opacity: 0;
+      transform: translateY(100%);
+      size: 3em;
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Adjustments for text and buttons */
+    #clickMessage {
+      text-align: center;
+      font-size: 2.5em; /* Larger font size for video overlay text */
+      margin: -100px 0 50px;
+      color: white;
+      font-family: 'Pixelify Sans', sans-serif;
+    }
+
+    .button-wrapper {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 25px 50px; /* Adjust button padding */
+      font-size: 1.8em; /* Adjust button font size */
+      margin: 20px;
+      transition: background-color 0.3s; /* Add transition effect */
+      font-family: 'Pixelify Sans', sans-serif;
+    }
+
+    button:hover {
+      background-color: green;
+    }
+
+    /* Footer styles */
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .footer-section {
+      flex: 1;
+      text-align: center;
+    }
+
+    .footer-section h2 {
+      margin-bottom: 10px;
+    }
+
+    .footer-section p {
+      margin: 5px 0;
+    }
+
+    .footer-section a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+<body>
+  <section class="video-section" style="position: relative;">
+    <video src="C:\Users\mahes\Desktop\portfolio\media\RPReplay_Final1704479927 (1).mp4" autoplay loop muted></video>
+    <div class="video-overlay1" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+      <h1 id="clickMessage" class="animate">PICK A LEVEL</h1>
+      <div class="button-wrapper animate">
+        <button id="page1Button" onclick="openInNewTab('about.html')">ABOUT ME</button>
+        <button id="page2Button" onclick="openInNewTab('outfits.html')">PROJECTS</button>
+        <button id="page3Button" onclick="openInNewTab('service.html')">SERVICES</button>
+      </div>
+    </div>
+  </section>
+  <script src="C:\Users\mahes\Desktop\MINI PROJECT\js\script.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Misha's portfolio</title>
+  <link rel="stylesheet" href="C:\Users\mahes\Desktop\MINI PROJECT\css\style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+ <style>
+  h1 {
+      font-size: 100px;
+      text-align: center;
+      margin-top: 200px; /* Adjusted margin to lower "About Me" */
+      color: white;
+      font-family: 'Pixelify Sans', sans-serif;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slideUp 2s forwards;
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    p {
+      font-size: 18px; 
+      line-height: 1.4; 
+      font-family: 'Pixelify Sans', sans-serif;
+      text-align: center;
+      color: black;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      overflow: hidden;
+      text-align: center; /* Center the content */
+    }
+    .content {
+      width: 100%; /* Adjusted width to fill the container */
+    }
+    fieldset {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin: 20px 0;
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: slideIn 2s ease forwards;
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    fieldset:hover {
+      transform: translateY(0) scale(1.1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+    }
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .content fieldset:nth-child(even) {
+      margin-right: 10px;
+    }
+    .content fieldset img {
+      left: -120px; /* Positioning the image to the left */
+    }
+    .content fieldset:last-child {
+      margin-bottom: 100px; /* Added margin to the last fieldset */
+    }
+ </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1 class="header-text" >
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="outfits.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="service.html">Services</a></li>
+          </ul>
+        </nav>
+      </h1>
+    </div>
+  </header>
+  <main>
+    <section class="video-section">
+      <video src="C:\Users\mahes\Desktop\portfolio\media\RPReplay_Final1704479927 (1).mp4" autoplay loop muted></video>
+      <div class="video-overlay">
+        <h1>About Me</h1>
+        <h1>Misha N Devegowda</h1>
+      </div>
+    </section>
+    <div class="container">
+      <div class="content">
+        <fieldset>
+          <p>
+            Hello! I'm Misha, a dedicated Front-End Developer driven by an unwavering passion for crafting captivating digital experiences through HTML.
+            I thrive on the challenge of turning innovative designs into functional, user-friendly websites that leave a lasting impact.
+          </p>
+          <p>
+            My journey into the world of coding began with an insatiable curiosity and a love for problem-solving.
+             I discovered my affinity for Front-End Development, honing my skills in HTML to transform concepts into visually appealing and responsive web solutions.
+             I take pride in ensuring seamless user experiences across devices, employing clean and efficient code to breathe life into designs.
+          </p>
+            <p>
+              In addition to my tech pursuits, I find solace and rejuvenation in swimming.
+            There's a unique tranquility in the water that clears my mind and fuels my creativity.
+            Whether gliding through laps or challenging myself against the clock, swimming instills discipline, focus, and a sense of balance in my life.
+            </p>
+        </fieldset>
+        
+        <fieldset>
+          <legend><h2>Languages Spoken</h2></legend>
+          <p>
+            English, Kannada, French, Hindi
+          </p>
+        </fieldset>
+        
+        <fieldset>
+          <legend><h2>Awards</h2></legend>
+          <p>
+            <ol>
+              <li>Miss Beautiful Smile 2022</li>
+              <li>Anne Maries Feast Elocution winner 2nd Place</li>
+              <li>Raja Narasimiah award for Most Hardworking Student</li>
+            </ol>
+          </p>
+        </fieldset>
+        
+        <fieldset>
+          <legend><h2>Education</h2></legend>
+          <p>
+            ICSE in Baldwin Girls High School 2009-2021
+          </p>
+          <p>ISC in Cluny Convent High School 2021-2023</p>
+          <p>Btech (Hons) @ RV University (currently enrolled)</p>
+        </fieldset>
+        
+        <fieldset>
+          <legend><h2>Skills</h2></legend>
+          <p>
+            HTML, CSS, JavaScript, etc.
+          </p>
+          
+        </fieldset>
+        
+        <fieldset>
+          <legend><h2>Hobbies</h2></legend>
+          <p>
+            Swimming, Reading,Creative Writing, Coding, etc.
+          </p>
+        </fieldset>
+      </div>
+    </div>
+    <a href="outfits.html" id="homebutton">CHECK OUT MY OTHER WORKS!</a><br><hr>
+  </div>
+    </div>
+  </main>
+  <script src="C:\Users\mahes\Desktop\MINI PROJECT\js\script.js"></script>
+</body>
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h2>Contact Me</h2>
+      <p>Email: mishadevegowda@gmail.com</p>
+      <p>Phone: 9591992141</p>
+    </div>
+    <div class="footer-section">
+      <h2>Site Links</h2>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">About me</a></p>
+      <p><a href="outfits.html">Projects</a></p>
+      <p><a href="service.html">Services</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; MISHA N DEVEGOWDA</p>
+  </div>
+</footer>
+</html>

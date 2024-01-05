@@ -1,0 +1,185 @@
+@media only screen and (max-width: 768px) {
+
+body, html {
+  font-family: 'Pixelify Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #0D50FF;
+}
+
+/*header CSS*/
+/* Merged styles */
+header {
+  font-family: 'Pixelify Sans', sans-serif;
+  background-color: #0D50FF;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #0D50FF;
+  color: white;
+}
+
+.header-text {
+  background-color: transparent;
+  font-family: 'Calisto MT', serif;
+  color: #fff; /* White text */
+  margin: 0;
+  text-align: center;
+  /* Flexbox for content alignment */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: slideLeft 1s forwards; /* Apply animation */
+  opacity: 0; /* Initially hidden */
+}
+
+/* Define animation keyframes */
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.header-text a {
+  color: #fff;
+  text-decoration: none; /* Remove underline */
+  font-family: 'Pixelify Sans', sans-serif;
+  background-color: transparent;
+}
+
+.header-text ul {
+  list-style: none;
+  font-family: 'Pixelify Sans', sans-serif;
+  display: flex;
+}
+
+.header-text ul li {
+  margin-right: 20px;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+.header-text ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+
+
+.video-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.video-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+  transform: translateY(100%);
+  animation: slideUp 1s forwards;
+}
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
+#homebutton {
+  color: white;
+  font-family: 'Pixelify Sans', sans-serif;
+  text-decoration: none;
+}
+#homebutton {
+  display: block;
+  width: 400px; /* Adjusted button width */
+  padding: 30px; /* Adjusted button padding */
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  cursor: pointer;
+  font-size: 35px;
+  text-align: center;
+  margin: 0 auto; /* Center the button */
+}
+#homebutton:hover {
+  background-color: green;
+  transform: scale(1.1);
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-section h2 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: #fff;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #fff;
+}
+
+}

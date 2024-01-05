@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <link rel="stylesheet" href="C:\Users\mahes\Desktop\MINI PROJECT\css\style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pixelify Sans', sans-serif;
+      height: 100%;
+    }
+    /* Style for the text and button */
+    h1 {
+      color: white;
+      font-family: 'Pixelify Sans', sans-serif;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 2.5em; /* Smaller font size */
+      margin-top: -20px; /* Move text higher */
+    }
+
+    .card-container {
+      width: 90%; /* Set the width to 90% */
+      max-width: 1200px; /* Limit the maximum width */
+      margin: 0 auto; /* Center the container horizontally */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      color: white;
+      overflow-x: hidden; /* Hide horizontal overflow */
+    }
+
+    /* Style for individual card */
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      width: 70%;
+      max-width: 600px;
+      text-align: center;
+      display: none;
+      animation: slideIn 2s ease-in-out; /* Smoother slide animation */
+    }
+
+    .card.active {
+      display: block;
+    }
+
+    /* Style for navigation buttons */
+    .prev-btn, .next-btn {
+      margin-top: 20px;
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      font-family: 'Pixelify Sans', sans-serif; /* Apply same font as text */
+    }
+    #pic{
+      width: 300px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="header-content">
+        <h1 class="header-text" >
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="outfits.html">Projects</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="service.html">Services</a></li>
+            </ul>
+          </nav>
+        </h1>
+      </div>
+    </header>
+    <section class="video-section">
+      <video src="C:\Users\mahes\Desktop\portfolio\media\RPReplay_Final1704479927 (1).mp4" autoplay loop muted></video>
+      <div class="video-overlay">
+        <h1>Gallery of Projects</h1>
+      </div>
+    </section>
+    <br><br>
+    <section class="card-container">
+
+      <div class="card" id="card1">
+        <h1>Student Council</h1>
+        <img src="C:\Users\mahes\Downloads\IMG-20220730-WA0043.jpg" alt="Student Counsil" id="pic" >
+        <p>I was a part of student council as a</p>
+        <button class="prev-btn">&larr; Previous</button>
+        <button class="next-btn">Next &rarr;</button>
+      </div>
+
+      <div class="card" id="card2">
+        <h1>Swimming</h1>
+        <img src="C:\Users\mahes\Downloads\IMG-20190829-WA0001.jpg" alt="Swimming" id="pic" >
+        <p>Gold Medal winner in Group B</p>
+        <button class="prev-btn">&larr; Previous</button>
+        <button class="next-btn">Next &rarr;</button>
+      </div>
+      <div class="card" id="card3">
+        <h1>NCC Guard of Honour</h1>
+        <img src="C:\Users\mahes\Downloads\IMG-20220325-WA0065.jpg" alt="NCC Guard of Honour" id="pic">
+        <p>i was invited back to my alumni to conduct the NCC Guard of Honour</p>
+        <button class="prev-btn">&larr; Previous</button>
+        <button class="next-btn">Next &rarr;</button>
+      </div>      
+      
+      <div class="card" id="card4">
+        <h1>Invited to Air Show</h1>
+        <img src="C:\Users\mahes\Downloads\IMG-20190221-WA0068.jpg" alt="Air Show" id="pic">
+        <p>i was invited by AirFly industries to the Airshow as a Junior Engineer</p>
+        <button class="prev-btn">&larr; Previous</button>
+        <button class="next-btn">Next &rarr;</button>
+      </div>      
+
+      <div class="card" id="card5">
+        <h1>Journalism Event</h1>
+        <img src="C:\Users\mahes\Downloads\1000015224 (1).jpg" alt="Journalism" id="pic">
+        <p>I had the wonderful oppurtunity of competing and representing my school in a journalism event held by St. Josephs College</p>
+        <button class="prev-btn">&larr; Previous</button>
+        <button class="next-btn">Next &rarr;</button>
+      </div>   
+    </section>
+    <br><hr>
+  </main>
+  <script src="C:\Users\mahes\Desktop\MINI PROJECT\js\script.js"></script>
+</body>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h2>Contact Me</h2>
+      <p>Email: mishadevegowda@gmail.com</p>
+      <p>Phone: 9591992141</p>
+    </div>
+    <div class="footer-section">
+      <h2>Site Links</h2>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">About me</a></p>
+      <p><a href="outfits.html">Projects</a></p>
+      <p><a href="service.html">Services</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; MISHA N DEVEGOWDA</p>
+  </div>
+</footer>
+</html>
